@@ -6,7 +6,7 @@ from base.base_test import BaseTest
 @allure.feature("Проверка поиска")
 class TestSearch(BaseTest):
 
-    @allure.title("Проверка поиска xtnj")
+    @allure.title("Проверка поля поиска на странице Клиенты")
     @allure.severity("critical")
     @pytest.mark.smoke
     def test_search(self):
@@ -20,4 +20,3 @@ class TestSearch(BaseTest):
         self.clients_page.is_opened()
         self.clients_page.search_field("тест")
         self.clients_page.search_click()
-        self.clients_page.make_screenshot("Успех")
