@@ -20,3 +20,4 @@ class TestSearch(BaseTest):
         self.clients_page.is_opened()
         self.clients_page.search_field("тест")
         self.clients_page.search_click()
+        
